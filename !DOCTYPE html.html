@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hidden Div</title>
+    <style>
+        /* Hide the div by default */
+        .hidden-text {
+            color: transparent; /* Make the text invisible */
+            user-select: none;  /* Prevent selection by default */
+        }
+
+        /* Show the text when highlighted */
+        .hidden-text::selection {
+            color: black; /* Change text color when selected */
+            background: yellow; /* Optional: highlight background */
+        }
+    </style>
+</head>
+<body>
+    <p>Try to highlight this text:</p>
+    <div class="hidden-text">This is the hidden text that appears when highlighted!</div>
+</body>
+</html>
